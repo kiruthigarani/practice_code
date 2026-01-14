@@ -1,6 +1,8 @@
 const list = [1,2,3,4,3,2,1,1,2,3,4,5];
 
 //indexOf method returns the index of the first occurrence of the element in the array
+//indexOf will search from the start of the array by default
+//we can give the second parameter to indexOf method to start searching from that index
 const newList = list.filter((element,index)=>{
     console.log("Element:",element,"--","Index of element:",list.indexOf(element),"--","Current Index:",index)  ;
   return list.indexOf(element) === index
