@@ -36,3 +36,26 @@ const nestedArray = [1, 2, [3, 4], [5, 6, [7, 8]]];
 const flattenedArray = nestedArray.flat(2); // 2 is the depth level to flatten
 console.log(flattenedArray); // [1, 2, 3, 4, 5, 6, 7, 8]
 
+//flatten the array using recurrsion
+
+function flattenArray(arr) {
+  let output = [];
+  arr.forEach((element) => {
+    if(Array.isArray(element)) {
+        //recursive call
+         output = output.concat(flattenArray(element));
+    }else{
+        output.push(element);
+    }
+  });
+
+//   for (let i = 0; i < arr.length; i++) {
+//       if(Array.isArray(arr[i])) {
+//            output.push(...flattenArray(arr[i]));
+//       }else{
+//           output.push(arr[i]);
+//       }
+//  }
+  return output;
+}
+ console.log(flattenArray(nestedArray) + "Usinng  recurrsion");
