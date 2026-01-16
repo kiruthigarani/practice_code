@@ -24,3 +24,15 @@ console.log(splitWithRegexp);  //['she is a good girl', 'she has a cat', ''] emp
 const str1 = "api.example.com, web.example.com;localhost|127.0.0.1";
 const splitWithRegexp1 = str1.split(/[,;|]/);
 console.log(splitWithRegexp1); //['api.example.com', ' web.example.com', 'localhost', '127.0.0.1']
+
+//Flattening the array - converting the nested level of araay to single level array
+//Example: [1, [2, [3]]] 
+/*
+*LEVEL 0 → [1, [2, [3]]]
+*LEVEL 1 → [2, [3]]
+*LEVEL 2 → [3]
+*/
+const nestedArray = [1, 2, [3, 4], [5, 6, [7, 8]]];
+const flattenedArray = nestedArray.flat(2); // 2 is the depth level to flatten
+console.log(flattenedArray); // [1, 2, 3, 4, 5, 6, 7, 8]
+
