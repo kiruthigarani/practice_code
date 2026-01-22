@@ -54,3 +54,6 @@ const arrowFunctionInsideMethodObj = {
     
 }
 arrowFunctionInsideMethodObj.showNameofarrow(); // 'this' refers to the object 'arrowFunctionInsideMethodObj'
+
+//this Keyword inside DOM Event Listener
+// In event listeners, 'this' refers to the element that received the event
