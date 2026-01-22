@@ -98,12 +98,11 @@ function createCounter() {
   };
 }
 
-const counter = createCounter();
+const counter1 = createCounter();
 
-counter.increment(); // 1
-counter.increment(); // 2
-counter.getCount();  // 2
-counter.decrement(); // 1
+counter1.increment(); // 1
+counter1.increment(); // 2
+counter1.getCount();  // 2
+counter1.decrement(); // 1
 
-
-console.log("Counter2:",counter.increment())
+console.dir("know better about closure",counter1);
