@@ -17,3 +17,17 @@ function exampleFunction() {
 exampleFunction(); // In javascript, 'this' is undefined in strict mode when the function is called directly
 
 window.exampleFunction(); // In browser, 'this' refers to Window object
+
+
+//this keyword value inside an object method
+// difference b/w method and function is that method is written inside an object
+const obj = {
+    name : "kiruthiga",
+    showName: function() {
+        console.log("this value inside object method",this); // 'this' refers to the object 'obj'
+        console.log("Name from object method:", this.name); // Accessing property using 'this'
+    },
+    
+}
+
+obj.showName(); // 'this' refers to the object 'obj'
