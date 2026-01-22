@@ -31,3 +31,26 @@ const obj = {
 }
 
 obj.showName(); // 'this' refers to the object 'obj'
+
+// this keyword inside an arrow function
+const arrowObj = {
+    name : "arrowFunction",
+    showName: () => {
+        console.log("this value inside arrow function",this); // 'this' refers to the surrounding lexical context (global object in this case)
+    },
+}
+
+arrowObj.showName(); // 'this' refers to the global/ window object
+
+const arrowFunctionInsideMethodObj = {
+    name : "kiruthiga",
+    age: 25,
+    showNameofarrow: function() {
+        const arrowFunction = () => {
+            console.log("this value inside arrow function",this); // 'this' refers to the surrounding lexical context, which is the object 'arrowFunctionInsideMethodObj'
+        }
+        arrowFunction();
+    },
+    
+}
+arrowFunctionInsideMethodObj.showNameofarrow(); // 'this' refers to the object 'arrowFunctionInsideMethodObj'
