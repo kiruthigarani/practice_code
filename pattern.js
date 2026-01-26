@@ -89,3 +89,26 @@ for(let i=1; i <=n; i++){
     }
 }
 
+/*
+* print 
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+*/
+
+n=5;
+for(let i=1; i <=n; i++){
+    let row = '';
+    for(let j=1;j<=i; j++)
+    { 
+        row +=i;
+    }
+
+    let element = document.getElementById("pattern1");
+    if(element){
+        element.innerHTML += row + "</br>";
+    }
+}
+
