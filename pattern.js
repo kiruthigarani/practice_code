@@ -50,19 +50,42 @@
 1 2 3
 1 2 3 4
 */
-for(let i = 1; i<=4; i++){
-    let row = '';
+// for(let i = 1; i<=4; i++){
+//     let row = '';
     
-    for(let j=1; j<i+1; j++){
+//     for(let j=1; j<i+1; j++){
      
-        row += j;
-        row += '\t';
+//         row += j;
+//         row += '\t';
        
-    }
+//     }
    
+//     let element = document.getElementById("pattern1");
+//     if(element) {
+//         element.innerHTML += row + '<br>';
+//     }
+// }
+
+
+/*
+* print 
+* * * * *
+* * * *
+* * *
+* *
+*
+*/
+n=5;
+for(let i=1; i <=n; i++){
+    let row ='';
+    for(let j=0;j< n-i+1; j++)
+    { 
+        row +='*';
+    }
+
     let element = document.getElementById("pattern1");
-    if(element) {
-        element.innerHTML += row + '<br>';
+    if(element){
+        element.innerHTML += row + "</br>";
     }
 }
 
