@@ -30,19 +30,39 @@
 * * * 
 * * * *
 */
-for(let i = 0; i<4; i++){
+// for(let i = 0; i<4; i++){
+//     let row = '';
+//     for(let j=0; j<i+1; j++){
+//         row += '* ';
+       
+//     }
+       
+//     let element = document.getElementById("pattern1");
+//     if(element) {
+//         element.innerHTML += row + '<br>';
+//     }
+// }
+
+/*
+* print 
+1
+1 2
+1 2 3
+1 2 3 4
+*/
+for(let i = 1; i<=4; i++){
     let row = '';
-    for(let j=0; j<i+1; j++){
-        row += '* ';
+    
+    for(let j=1; j<i+1; j++){
+     
+        row += j;
+        row += '\t';
        
     }
-       
-    // To display in HTML, add this div to your HTML file:
-    // <div id="pattern1"></div>
-    // console.log("Row value:",row);
-    // console.log("<br>");
+   
     let element = document.getElementById("pattern1");
     if(element) {
         element.innerHTML += row + '<br>';
     }
 }
+
