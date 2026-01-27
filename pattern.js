@@ -75,19 +75,19 @@
 * *
 *
 */
-n=5;
-for(let i=1; i <=n; i++){
-    let row ='';
-    for(let j=0;j< n-i+1; j++)
-    { 
-        row +='*';
-    }
+// n=5;
+// for(let i=1; i <=n; i++){
+//     let row ='';
+//     for(let j=0;j< n-i+1; j++)
+//     { 
+//         row +='*';
+//     }
 
-    let element = document.getElementById("pattern1");
-    if(element){
-        element.innerHTML += row + "</br>";
-    }
-}
+//     let element = document.getElementById("pattern1");
+//     if(element){
+//         element.innerHTML += row + "</br>";
+//     }
+// }
 
 /*
 * print 
@@ -98,12 +98,34 @@ for(let i=1; i <=n; i++){
 5 5 5 5 5
 */
 
-n=5;
+// n=5;
+// for(let i=1; i <=n; i++){
+//     let row = '';
+//     for(let j=1;j<=i; j++)
+//     { 
+//         row +=i;
+//     }
+
+//     let element = document.getElementById("pattern1");
+//     if(element){
+//         element.innerHTML += row + "</br>";
+//     }
+// }
+
+/*
+* print 
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+*/
+let n=5;
 for(let i=1; i <=n; i++){
     let row = '';
-    for(let j=1;j<=i; j++)
+    for(let j=1;j<=n-i+1; j++)
     { 
-        row +=i;
+        row +=j;
     }
 
     let element = document.getElementById("pattern1");
