@@ -36,3 +36,22 @@ console.log(`The substring "${subStr}" occurs ${count_of_substring} times in the
 
 const str = "Hello world, welcome to the world.";
 console.log(str.indexOf("world", 10)); // RETURNS 28, STARTING SEARCH FROM INDEX 10
+
+
+//remove duplicate
+const array1 =[
+    {name:"cap1",rollnumber:1},
+    {name:"cap2",rollnumber:2},
+    {name:"cap1",rollnumber:"1"} 
+] ;
+const uniqueIds = [];
+const array2 = array1.filter((element)=>{
+
+    const unique = uniqueIds.includes(element.name );
+    if(!unique){
+        return uniqueIds.push(element.name );
+        //return true;
+    }
+    return false;
+});
+console.log("unique:",array2);
