@@ -20,11 +20,12 @@ console.log(str1.indexOf("World")); // returns -1, CASE SENSITIVE
 
 //how to check the count of the substring exists in a string
 
-const string = "Hello world, welcome to the world.";
+const string = "Hello w world, welcome to the world. hello hi world";
 const subStr = "world";
 const count = (string, subStr) => {
     let count = 0;
     let pos = string.indexOf(subStr);
+    console.log("position:",pos);
     while (pos !== -1) {
         count++;
         pos = string.indexOf(subStr, pos + 1);
