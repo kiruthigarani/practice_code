@@ -66,3 +66,11 @@ console.log("Names of all persons:",names);
 //get fname whose age is greater than or equal to 30 
 const namesWithAge30 = person.filter( (p) =>p.age >=30).map((p) => p.fname);
 console.log("First names of persons with age >= 30 using filter and map:",namesWithAge30);
+
+const d = person.reduce((acc, curr) => {
+    if (curr.age >= 30) {
+        acc.push(curr.fname);
+    }
+    return acc;
+}, []);
+console.log("First names of persons with age >= 30 using reduce:",d);
