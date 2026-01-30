@@ -13,23 +13,28 @@ let reduecedsum = vals.reduce((accumulator, currentValue) => {
 console.log("sum using reduce function:",reduecedsum);
 
 const person = [{
-    name: "Alice",
+    fname: "Alice",
+    lname: "Smith",
     age: 30,
     city: "New York"
 }, {
-    name: "Bob",
+    fname: "Bob",
+    lname: "Johnson",
     age: 25,
     city: "Los Angeles"
 }, {
-    name: "Charlie",
+    fname: "Charlie",
+    lname: "Williams",
     age: 35,
     city: "New York"
 },
-{    name: "David",
+{    fname: "David",
+    lname: "Brown",
     age: 28,
     city: "Chicago"
 },
-{    name: "Eve",
+{    fname: "Eve",
+    lname: "Davis",
     age: 22,
     city: "Los Angeles"
 }
@@ -51,9 +56,13 @@ console.log(groupByCity);
 
 const getName = person.filter( (p) =>{
     if(p.age >= 30){
-        return p.name;
+        return p.fname;
     }
 });
 console.log("Names of persons with age >= 30:",getName);
-const names = person.map( (p) => p.name );
+const names = person.map( (p) => p.lname );
 console.log("Names of all persons:",names);
+
+//get fname whose age is greater than or equal to 30 
+const namesWithAge30 = person.filter( (p) =>p.age >=30).map((p) => p.fname);
+console.log("First names of persons with age >= 30 using filter and map:",namesWithAge30);
