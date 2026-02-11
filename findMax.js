@@ -10,8 +10,7 @@ function findLargestElement(arr, n) {
           
         }
     }
-  
-    return max;  // Return the largest element found
+      return max;  // Return the largest element found
 }
 
 

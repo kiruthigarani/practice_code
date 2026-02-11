@@ -47,7 +47,6 @@ const array1 =[
 ] ;
 const uniqueIds = [];
 const array2 = array1.filter((element)=>{
-
     const unique = uniqueIds.includes(element.name );
     if(!unique){
         return uniqueIds.push(element.name );
@@ -56,3 +55,4 @@ const array2 = array1.filter((element)=>{
     return false;
 });
 console.log("unique:",array2);
+

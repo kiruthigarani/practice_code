@@ -8,7 +8,7 @@ outerFunction();
  console.log("Now Value of i:", i); // here the value of 'i' will be 10
 
 
- const size12 = makeSizer(12);
+const size12 = makeSizer(12);
 const size14 = makeSizer(14);
 const size16 = makeSizer(16);
 
@@ -32,8 +32,7 @@ function heavyCalculation() {
     }
     return function(index){
          console.log("Result:", result[index]);
-    }
-   
+    }   
 }
 console.time();
 // heavyCalculation(6);
@@ -44,11 +43,9 @@ console.timeEnd();
 
 /***************Interview question************************/
 for (var j = 1; j <= 5; j++) {
-   
-        setTimeout(()=>{
+           setTimeout(()=>{
             console.log("Counter:", j); // output is 6 five times
         },1000);
-
 }
 
 //convert above code to print 1to 5 
