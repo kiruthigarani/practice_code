@@ -13,7 +13,7 @@ for(let i =0; i < length; i++){
 if(isPalindrome){
     console.log(`${text} is Palindrome`);
 }else{
-     console.log(`${text} is Palindrome`);
+     console.log(`${text} is not Palindrome`);
 }
 
 
