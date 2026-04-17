@@ -56,3 +56,7 @@ const array2 = array1.filter((element)=>{
 });
 console.log("unique:",array2);
 
+
+
+
+
