@@ -49,7 +49,7 @@ const uniqueIds = [];
 const array2 = array1.filter((element)=>{
     const unique = uniqueIds.includes(element.name );
     if(!unique){
-        return uniqueIds.push(element.name );
+        return uniqueIds.push(element.name);
         //return true;
     }
     return false;
