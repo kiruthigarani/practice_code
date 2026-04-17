@@ -16,3 +16,25 @@ const problem = 'Facing VPN issue';
 const message = `Hello, I am ${name}. I am using ${laptopModel} laptop,
 and my desk number is ${deskNo}. I am facing the following problem: ${problem}.`;
 console.log(message);
+
+//7.De-structuring assignment: 
+//a taking third array value
+let userDetails = ['Arun', 'Dinesh', 'Selva', 'Ranjith', 'Sunil'];
+let [first,second,third] = userDetails;
+console.log(third); // 'Selva'
+
+//deep destructuring
+const user = {
+    username: 'Kiruthiga',
+    address: {
+        city: 'Madurai',
+        state: 'Tamil Nadu',
+        pin: 625019
+    }
+}
+const {username,address:{city, state,pin}} = user;
+console.log(username); // 'Kiruthiga'
+console.log(city); // 'Madurai'
+console.log(state); // 'Tamil Nadu'
+console.log(pin); // 625019
+
