@@ -15,3 +15,8 @@ Multiple Sources     Can merge multiple source objects           Can merge multi
 Performance          Slightly slower due to function call Generally faster due to the concise syntax
 
 Use Case        Suitable for merging into the existing objects    Suitable for creating new objects
+
+
+
+Use includes() if you just need a "yes/no" answer regarding the presence of a primitive value (like a string or number).
+Use find() if you need to access the actual data of the item once it is located.
