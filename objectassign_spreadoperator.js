@@ -107,3 +107,6 @@ hardcopyarray.push(7);
 console.log("originalarray:",originalarray);
 console.log("hardcopyarray:",hardcopyarray);
 
+let cities = ['Pune', 'Delhi', 'Bangalore'];
+let isavailable = cities.includes('Delhi');
+console.log(isavailable); // true
