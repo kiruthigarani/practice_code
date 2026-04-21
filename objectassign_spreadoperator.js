@@ -110,3 +110,15 @@ console.log("hardcopyarray:",hardcopyarray);
 let cities = ['Pune', 'Delhi', 'Bangalore'];
 let isavailable = cities.includes('Delhi');
 console.log(isavailable); // true
+
+
+let cities2 = ['Pune', 'Delhi', 'Bangalore'];
+let newarr = [];
+
+for(let i=0;i<cities2.length;i++){
+// newarr.push(cities2[i]); // ['Pune', 'Delhi', 'Bangalore']
+//newarr.unshift(cities2[i]); // ['Bangalore', 'Delhi', 'Pune']
+newarr.shift(cities2[i]); //empty array []  
+
+}
+console.log(newarr); // ['Pune', 'Delhi', 'Bangalore']
