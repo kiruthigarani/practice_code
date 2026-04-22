@@ -122,3 +122,60 @@ newarr.shift(cities2[i]); //empty array []
 
 }
 console.log(newarr); // ['Pune', 'Delhi', 'Bangalore']
+
+
+//interview Questions - Q1
+const original = { 
+    name: "Alice", 
+    details: 
+        { 
+            city: "New York"         
+        }
+ };
+const copied = { ...original };
+ console.log("original:",original.details.city);
+copied.name = "Bob";       
+copied.details.city = "LA";
+console.log("copied CITY NAME:",original.details.city);
+
+
+//interview Questions - Q2
+	console.log("start");
+    
+	settimeout(()=> console.log(10), 0);
+	settimeout(()=> console.log(100), 100);
+	process.nextTick(console.log("next"));
+	promise.resolve(()=> console.log("resolved"));
+	promise.resolve(()=> console.log("next resolved"));
+	console.log("completed")
+
+
+/*start
+* completed
+* next
+resolved
+next resolved
+10
+100
+*
+*/
+
+//interview Questions- Q3
+
+function samplefunc(){
+var a,b;
+console.log(a,b); //undefined
+var a = 10, b =20;
+}
+ 
+var obj = {
+   name: "Name",
+   age: 20,
+    randomNumber: function () {
+	console.log(x); //undefined
+	console.log(y); // reference error
+	var x = 5;
+	let y = 10;
+	}
+
+}
