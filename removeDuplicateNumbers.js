@@ -54,5 +54,12 @@ const array2 = array1.filter((element)=>{
     }
     return false;
 });
-console.log("unique:",array2);
+//console.log("unique:",array2);
 
+let obj ={};
+for(const element of array1){
+ //console.log("element:",element);
+ obj[element.name] = element;
+
+}
+ console.log("obj unique:",Object.values(obj));
