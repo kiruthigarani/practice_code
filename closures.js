@@ -103,3 +103,45 @@ counter1.getCount();  // 2
 counter1.decrement(); // 1
 
 console.dir("know better about closure",counter1);
+
+
+
+const originalValue = {
+  name : "kiruthiga",
+  age : 25
+
+}
+const copyValue = originalValue;
+copyValue.name = "Arun";
+console.log("originalValue:",originalValue); //Arun
+console.log("copyValue:",copyValue); //Arun
+
+const newCopyValue = {...originalValue};
+newCopyValue.name = "Karthik";
+console.log("originalValue:",originalValue);
+console.log("newCopyValue:",newCopyValue);
+
+
+const arr1 = [1,2,3,4,5];
+const arr2 = arr1;
+arr2.push(6);
+console.log("arr1:",arr1); // [1, 2, 3, 4, 5, 6]  
+
+
+const originalObject = {
+   a: 1, 
+   b: 2,
+   addValue: function() {
+    return this.a + this.b; 
+   }
+};
+const copiedObject = originalObject;
+copiedObject.a = 10;
+console.log("originalObject:",originalObject);
+console.log("copiedObject:",copiedObject);
+/*
+*originalObject: {a: 10, b: 2, addValue: ƒ}
+copiedObject: {a: 10, b: 2, addValue: ƒ}
+*
+*/
+

@@ -132,11 +132,29 @@ const original = {
             city: "New York"         
         }
  };
+const copiedAssignmentOperation = original;
+console.log("original:",original);
+console.log("copiedAssignmentOperation:",copiedAssignmentOperation);
+copiedAssignmentOperation.name = "Bob";       
+copiedAssignmentOperation.details.city = "LA";
+console.log("original:",original);
+console.log("copiedAssignmentOperation:",copiedAssignmentOperation);
+
 const copied = { ...original };
- console.log("original:",original.details.city);
+ console.log("original:",original);
+ console.log("copied:",copied);
 copied.name = "Bob";       
 copied.details.city = "LA";
-console.log("copied CITY NAME:",original.details.city);
+ console.log("original using spread operator:",original);
+ console.log("copied using spread operator:",copied);
+
+ const copiedusingCloneMethod = structuredClone(original);
+ console.log("original:",original);
+ console.log("copied:",copiedusingCloneMethod);
+copiedusingCloneMethod.name = "Bob";       
+copiedusingCloneMethod.details.city = "LA";
+ console.log("original using spread operator:",original);
+ console.log("copied using spread operator:",copiedusingCloneMethod);
 
 
 //interview Questions - Q2
