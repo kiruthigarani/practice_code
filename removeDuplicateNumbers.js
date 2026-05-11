@@ -56,6 +56,7 @@ const array2 = array1.filter((element)=>{
 });
 //console.log("unique:",array2);
 
+
 let obj ={};
 for(const element of array1){
  //console.log("element:",element);
@@ -63,3 +64,4 @@ for(const element of array1){
 
 }
  console.log("obj unique:",Object.values(obj));
+

@@ -19,8 +19,6 @@ const splitWithRegexp = str.split(/[!.]/);
 console.log(splitWithRegexp);  //['she is a good girl', 'she has a cat', ''] empty string because ! and . are the seperator here, so split separates the string after . it considered after . no strings, empty means it returns ""
 
 
-
-
 const str1 = "api.example.com, web.example.com;localhost|127.0.0.1";
 const splitWithRegexp1 = str1.split(/[,;|]/);
 console.log(splitWithRegexp1); //['api.example.com', ' web.example.com', 'localhost', '127.0.0.1']
