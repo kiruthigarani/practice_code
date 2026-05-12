@@ -3,15 +3,15 @@ const target = 7;
 
 
 function sumIndex (arr,target){
-const map = {};
-for(let i = 0; i < arr.length; i++){
-    let search = target - arr[i];
-    console.log("search:",search,"map:",map);
-    if(map[search] !== undefined){
-       // return [arr[map[search]],arr[i]];
-          return [map[search],i];
+const numMap = new Map();
+console.log("numMap:", numMap);
+for(let i=0;i < arr.length;i++){
+    const findNum = target - arr[i];
+    console.log("findNum:", numMap.has(findNum));
+    if(numMap.has(findNum)){
+        return [numMap.get(findNum),i];
     }
-    map[arr[i]] = i;
+    numMap.set(arr[i],i);
 }
 }
 
