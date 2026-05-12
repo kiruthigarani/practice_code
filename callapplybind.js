@@ -1,9 +1,14 @@
 const userDetail1 = {
     name : "kiruthiga",
     age : 25,
-    printInfo : function(city,pincode){
-        console.log("Name:", this.name + "-" + "Age:", this.age + "-" + "City:", city + "-" + "Pincode:", pincode);
+    // printInfo : function(city,pincode){
+    //     console.log(city,pincode);
+    //     console.log("Name:", this.name + "-" + "Age:", this.age + "-" + "City:", city + "-" + "Pincode:", pincode);
+    // }
 
+     printInfo : function(...arg){
+    const [city, pincode] = arg;
+        console.log("Name:", this.name + "-" + "Age:", this.age + "-" + "City:", city + "-" + "Pincode:", pincode);
     }
 }
 
@@ -12,5 +17,7 @@ const userDetail2 = {
     age:44
 }
 
-userDetail1.printInfo.call(userDetail2, "madurai", 625019);
+// userDetail1.printInfo.call(userDetail2, "madurai", 625019);
+
+userDetail1.printInfo.apply(userDetail2, ["madurai", "625019"]);
 
