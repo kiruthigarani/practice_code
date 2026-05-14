@@ -20,3 +20,9 @@ Use Case        Suitable for merging into the existing objects    Suitable for c
 
 Use includes() if you just need a "yes/no" answer regarding the presence of a primitive value (like a string or number).
 Use find() if you need to access the actual data of the item once it is located.
+
+call() and apply() method - 
+    * used when you want to share a function between objects, 
+    * often wants to run a function with specific object
+
+call() method will invoke immediately additional arguments will be passed by commo seperator. Meanwhile apply() method will invoke immediately but additional arguments will be taken as array
