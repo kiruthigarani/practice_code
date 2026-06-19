@@ -6,3 +6,5 @@ let sum = arr.reduce((acc,res)=>{
 
 console.log(sum);
 
+
+
