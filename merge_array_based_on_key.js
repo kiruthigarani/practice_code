@@ -9,3 +9,27 @@ let merge_output = a1.map((item)=>{
 });
 
 console.log("Merge two array based on id:",merge_output);
+
+const freelancers = [
+  { name: 'Harry', skill: 'JavaScript' },
+  { name: 'David', skill: 'JavaScript' },
+  { name: 'Sarah', skill: 'Python' }
+];
+
+const groupedBySkill = freelancers.reduce((acc, curr) => {
+  if (!acc[curr.skill]) {
+    acc[curr.skill] = [];
+  }
+  acc[curr.skill].push(curr);
+  return acc;
+}, {});
+
+console.log(groupedBySkill);
+
+const fruits = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+const fruitCounts = fruits.reduce((acc, curr) => {
+  acc[curr] = (acc[curr] || 0) + 1;
+  return acc;
+}, {});
+
+console.log(fruitCounts);
